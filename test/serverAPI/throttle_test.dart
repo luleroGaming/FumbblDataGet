@@ -1,4 +1,4 @@
-import 'package:fumbblDataGet/serverAPI/throttle.dart';
+import 'package:fumbbl_data_get/server_api/throttle.dart';
 import 'package:test/test.dart';
 
 void main() {

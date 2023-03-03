@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:fumbblDataGet/database/database.dart';
+import 'package:fumbbl_data_get/database/database.dart';
 
 const bool online = false;
 const int matchId = 4000001;

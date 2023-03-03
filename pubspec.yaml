@@ -1,4 +1,4 @@
-name: fumbblDataGet
+name: fumbbl_data_get
 description: API to access data from fumbbl.
 version: 1.0.0
 

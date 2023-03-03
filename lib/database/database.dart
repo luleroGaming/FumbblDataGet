@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:fumbblDataGet/serverAPI/serverRequests.dart';
+import 'package:fumbbl_data_get/server_api/serverRequests.dart';
 
 class Database {
   static const String matchesFolder = 'matches/';

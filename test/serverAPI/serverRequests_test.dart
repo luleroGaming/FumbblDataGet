@@ -1,4 +1,4 @@
-import 'package:fumbblDataGet/serverAPI/serverRequests.dart';
+import 'package:fumbbl_data_get/server_api/serverRequests.dart';
 import 'package:test/test.dart';
 
 // Note it doesn't test actual web features

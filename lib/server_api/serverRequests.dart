@@ -3,7 +3,7 @@
 // Only "Get", and mostly database related
 // Also includes "get replay" that is not documented
 
-import 'package:fumbblDataGet/serverAPI/throttle.dart';
+import 'package:fumbbl_data_get/server_api/throttle.dart';
 import 'package:requests/requests.dart';
 
 enum ServerRequest {
