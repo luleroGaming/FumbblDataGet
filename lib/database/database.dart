@@ -39,15 +39,11 @@ class Database {
 
   Future<String> getMatch(int id) async {
     final String fileName = '$_rootFolder$matchesFolder/match$id.json';
-    final ServerRequest request = ServerRequest.matchGet;
-    final List<String> args = ['$id'];
-    return await _get(fileName, request, args, false);
+    return await _get(fileName, ServerRequest.matchGet, ['$id'], false);
   }
 
   Future<String> getReplay(int id) async {
     final String fileName = '$_rootFolder$replayFolder/replay$id.gz';
-    final ServerRequest request = ServerRequest.replayGet;
-    final List<String> args = ['$id'];
-    return await _get(fileName, request, args, true);
+    return await _get(fileName, ServerRequest.replayGet, ['$id'], true);
   }
 }
