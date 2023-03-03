@@ -7,7 +7,7 @@ const bool online = false;
 const int matchId = 4000001;
 
 void main(List<String> arguments) async {
-  final Database database = Database(online: online);
+  final Database database = Database('../data/fumbbl/', online: online);
 
   // Fetch match data
   final String matchString = await database.getMatch(matchId);

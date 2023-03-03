@@ -7,11 +7,10 @@ class Database {
   static const String matchesFolder = 'matches/';
   static const String replayFolder = 'replays/';
 
-  late String _rootFolder;
+  final String _rootFolder;
   late bool _online;
 
-  Database({rootFolder = '../data/fumbbl/', bool online: false}) {
-    _rootFolder = rootFolder;
+  Database(this._rootFolder, {bool online: false}) {
     _online = online;
     final Directory root = Directory(_rootFolder);
     if (!(root.existsSync())) {
