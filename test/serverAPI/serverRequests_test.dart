@@ -4,7 +4,7 @@ import 'package:test/test.dart';
 // Note it doesn't test actual web features
 // (obviously doesn't belong in unit testing)
 
-void main(List<String> args) {
+void main() {
   test("Common requests", () {
     const String serverUrl = ServerRequest.serverUrl;
     expect(ServerRequest.replayGet.getRequestString(['42']),
