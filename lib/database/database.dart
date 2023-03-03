@@ -29,7 +29,7 @@ class Database {
       await file.create(recursive: true);
       await file.writeAsBytes(bytes, flush: true);
     } else {
-      bytes = [];
+      throw Exception("Could not find data on disk while offline.");
     }
     if (bytes.isNotEmpty && compressed) {
       bytes = gzip.decode(bytes);
