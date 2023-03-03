@@ -7,8 +7,8 @@ import 'package:fumbblDataGet/serverAPI/throttle.dart';
 import 'package:requests/requests.dart';
 
 enum ServerRequest {
-  boxtrophyStandings,
-  boxtrophyRecent,
+  boxTrophyStandings,
+  boxTrophyRecent,
   coachGet,
   coachSearch,
   coachTeams,
@@ -35,9 +35,9 @@ enum ServerRequest {
 
   List<String> getArgumentsHelp() {
     switch (this) {
-      case ServerRequest.boxtrophyStandings:
+      case ServerRequest.boxTrophyStandings:
         return [];
-      case ServerRequest.boxtrophyRecent:
+      case ServerRequest.boxTrophyRecent:
         return [];
       case ServerRequest.coachGet:
         return ["coachId"];
@@ -88,9 +88,9 @@ enum ServerRequest {
     }
     const String serverUrl = ServerRequest.serverUrl;
     switch (this) {
-      case ServerRequest.boxtrophyStandings:
+      case ServerRequest.boxTrophyStandings:
         return '$serverUrl/boxtrophy/standings';
-      case ServerRequest.boxtrophyRecent:
+      case ServerRequest.boxTrophyRecent:
         return '$serverUrl/boxtrophy/recent';
       case ServerRequest.coachGet:
         return '$serverUrl/coach/get/${args[0]}';
